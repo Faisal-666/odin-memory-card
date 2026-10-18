@@ -1,5 +1,5 @@
 import './App.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Game from './components/game/Game';
 import Dialog from './components/dialog/dialog.jsx';
 import giphyService from './service/giphyService.js';

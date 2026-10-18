@@ -1,10 +1,9 @@
 import style from './style.module.css';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import Card from '../card/card';
 import responseTransformer from '../../utils/responseTransformer';
 
 const Game = ({ onReset, getImages, loadingHook, imgsHook, scoreHook}) => {
-  const [error, setError] = useState(null);
   const { isLoading, setLoading } = loadingHook;
   const { imgs, setImgs, markImage, shuffle } = imgsHook;
   const { score, setScore, highestScore } = scoreHook;
