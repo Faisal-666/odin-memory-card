@@ -1,0 +1,38 @@
+.dialog[open] {
+    position: fixed;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .7em;
+
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 1em;
+    border: 1px solid hsl(0, 0%, 85%);
+}
+.dialog::backdrop {
+    background-color: hsla(0, 0%, 0%, 0.75);
+}
+.win {
+    width: 80%;
+}
+.cat {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+.dialogBtn {
+    cursor: pointer;
+    padding: .7em 1.3em;
+    
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+    font-size: 1.2em;
+}

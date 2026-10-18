@@ -1,0 +1,8 @@
+body {
+    margin: 0 2em;
+}
+@media (max-width: 320px) {
+    body {
+        margin: 0 .5em;
+    }
+}
